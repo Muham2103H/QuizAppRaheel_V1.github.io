@@ -1,0 +1,122 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    background: linear-gradient(to bottom, #0008fc,#02f2fa,#05fa90 );
+}
+
+.header {
+    text-align: center;
+    background-color: darkgrey;
+    color: blue;
+    padding: 1px;
+    font-family: Impact, Hearrenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 0;
+    animation: Slide_FeadeIn 5s ease-in-out forwards;
+}
+
+@keyframes Slide_FeadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.quiz-container {
+    max-width: 750px;
+    background-color: white;
+    height: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.progress-bar-container {
+    height: 15px;
+    background-color: gray;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+}
+
+.progress-bar-fill {
+    height: 15px;
+    background-color: red;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.question {
+    margin: 20px;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.start-btn {
+    font-size: 18px;
+    width: 100px;
+    margin: auto;
+    display: block;
+    background-color: Red;
+    font-weight: 700;
+}
+
+.start-btn:hover {
+    background-color: Limegreen;
+}
+
+
+.timer {
+    text-align: center;
+    background-color: #26ff05;
+    color:black;
+    width: 100px;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+    font-size: 49px;
+    font-weight: bold;
+    padding: 80px 60px;
+    border-radius: 60%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+.option-btn {
+    display: block;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.option-btn:hover {
+    background-color: lightgreen;
+    color: red;
+    width: 80%;
+}
+
+
+.score {
+    background-color: Lightblue;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    width: fit-content;
+    font-weight: 700;    
+}
